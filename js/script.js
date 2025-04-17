@@ -26,7 +26,7 @@ function checkNumber() {
         // output 
         document.getElementById('result').innerHTML =
 
-            "<p>You have guessed the wrong number! The random number is: " + randomNumber + ". </p>"
+            "<p>You have guessed the wrong number!" < br > "The random number is: " + randomNumber + ". </p>"
 
     }
 }

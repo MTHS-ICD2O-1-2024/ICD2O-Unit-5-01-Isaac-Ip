@@ -27,12 +27,7 @@
         <span class="mdl-layout-title">Guess a Random Number, in JS</span>
       </div>
     </header>
-    <h1>&nbsp Guess a Random Number:
-      <br>
-      <br>
-      <br>
-      <br>
-    </h1>
+    <h1>&nbsp Guess a Random Number:</h1>
     <main class="mdl-layout__content">
       <div class="right-image">
         <img src="./images/dice.gif" alt="dice">
@@ -42,21 +37,22 @@
       <form action="#">
         Number Guessed:
         <div class="mdl-textfield mdl-js-textfield">
-          <input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="radius" step="1" />
-          <label class="mdl-textfield__label" for="radius">Number Here ...</label>
+          <input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="user-number" step="1" />
+          <label class="mdl-textfield__label" for="user-number">Number Here ...</label>
           <span class="mdl-textfield__error">Input is not a number!</span>
         </div>
         <!-- Raised button with ripple -->
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="doMathClicked()" type="button">
+          onclick="checkNumber()" type="button">
           Submit Guess?
         </button>
       </form>
-      <div id="volume">
+      <div id="result">
         <p>The Guess is:</p>
       </div>
       <br />
     </main>
   </div>
 </body>
+
 </html>
